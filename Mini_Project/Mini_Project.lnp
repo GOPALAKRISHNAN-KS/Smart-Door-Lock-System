@@ -1,0 +1,23 @@
+--cpu=Cortex-M4.fp.sp
+"mini_project\startup_stm32f446xx.o"
+"mini_project\main.o"
+"mini_project\stm32f4xx_it.o"
+"mini_project\stm32f4xx_hal_msp.o"
+"mini_project\stm32f4xx_hal_rcc.o"
+"mini_project\stm32f4xx_hal_rcc_ex.o"
+"mini_project\stm32f4xx_hal_flash.o"
+"mini_project\stm32f4xx_hal_flash_ex.o"
+"mini_project\stm32f4xx_hal_flash_ramfunc.o"
+"mini_project\stm32f4xx_hal_gpio.o"
+"mini_project\stm32f4xx_hal_dma_ex.o"
+"mini_project\stm32f4xx_hal_dma.o"
+"mini_project\stm32f4xx_hal_pwr.o"
+"mini_project\stm32f4xx_hal_pwr_ex.o"
+"mini_project\stm32f4xx_hal_cortex.o"
+"mini_project\stm32f4xx_hal.o"
+"mini_project\stm32f4xx_hal_exti.o"
+"mini_project\system_stm32f4xx.o"
+--strict --scatter "Mini_Project\Mini_Project.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Mini_Project.map" -o Mini_Project\Mini_Project.axf
